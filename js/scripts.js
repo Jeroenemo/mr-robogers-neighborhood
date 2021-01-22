@@ -34,17 +34,15 @@ $(document).ready(function() {
     event.preventDefault();
     const number = parseInt($("#number").val());
     const name = ($("#name").val());
-    $("button#input-button").click(function() { 
-      $("#input-form").hide();
-      $("#output-form").show();
-      $("#output").text(beepBoop(number, name));
-    });
-    $("button#output-button").click(function() {
-      $("#input-form").show();
-      $("#output-form").hide();
-    })
-    
-    
+    $("#output").text(beepBoop(number, name))
+  });
+  $("button#input-button").click(function() { 
+    $("#input-form").hide();
+    $("#output-form").show();
+  });
+  $("button#output-button").click(function() {
+    $("#input-form").hide();
+    $("#output-form").show();
   });
 }); 
 
