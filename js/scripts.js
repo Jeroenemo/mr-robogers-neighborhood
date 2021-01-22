@@ -5,17 +5,21 @@ function beepBoop(number, name) {
   } else {
     for(let i = 0; i <= number; i++) {
       if (i.toString().includes(3)) {
-        roboArray.push(name + ", won't you be my neighbor?");
+        if (name === "") {
+          roboArray.push(" Won't you be my neighbor?");
+        } else {
+          roboArray.push(" " + name + ", won't you be my neighbor? ");
+        }
       } else if (i.toString().includes(2)) {
-        roboArray.push("Boop!");
+        roboArray.push(" Boop!");
       } else if (i.toString().includes(1)) {
-        roboArray.push("Beep!");
+        roboArray.push(" Beep!");
       } else {
         roboArray.push(i);
       }
     }
   }
-  return roboArray.toString()
+  return roboArray
 }
 
 $(document).ready(function() {
