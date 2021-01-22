@@ -10,7 +10,7 @@
   <title>Mr. Robogers Neighborhood</title>
 </head>
 <body style="background-image: url('img/rogers-background.jpg');">
-  <div id="input" class="jumbotron"> 
+  <div id="input-form" class="jumbotron"> 
     <form id="form">
       <div id="form-group">
         <label for="name">Hi! What's your name?</label>
@@ -20,13 +20,20 @@
         <label for="number">Enter a whole number:</label>
         <input id="number" class="form-control" type="text">
       </div>
-      <button type="submit" class="button" id="button">Let's Go!</button>
+      <button type="submit" class="button" id="input-button">Let's Go!</button>
     </form>
   </div>
-  <div id="output" class="jumbotron"">
-    <div >
-      <p id="output"></p>
-    </div>
-  </div> 
+  
+  <div id="output-form" class="jumbotron"">
+    <form>
+      <div id="form-group">
+        
+          <p id="output"></p>
+        
+        <button type="back" class="button" id="output-button">Again!</button> 
+      </div>
+      
+    </form>
+  </div>
 </body>
 </html>

@@ -5,13 +5,13 @@ body {
   background-size: cover;
 }
 
-#input.jumbotron {
+#input-form.jumbotron {
   margin-right: 50%;
   margin-left: 5%;
   margin-top: 5%;
 }
 
-#output.jumbotron {
+#output-form.jumbotron {
   display: none;
   margin-right: 50%;
   margin-left: 5%;
