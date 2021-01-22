@@ -32,7 +32,8 @@ function beepBoop(number) {
       roboArray.push("Beep!");
     } else if (number === 2) {
       roboArray.push("Boop!");
-    
+    } else if (number === 3) {
+      roboArray.push("Won't you be my neighbor?");
     } else {
       roboArray.push(number);
     }
