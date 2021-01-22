@@ -23,6 +23,8 @@
 // Test: "It should return 'Won't you be my neighbor?' for any  number that contains 3, overriding 1 and 2"
 // Expect(beepBoop(123).toEqual("Won't you be my neighbor?"))
 
+// Test "It should iterate over range of 0 to input and push results to array"
+// Expect(beepBoop(5).toEqual([0,"Beep!", "Boop!", "Won't you be my neighbor?", 4, 5]))
 function beepBoop(number) {
   const roboArray = []
   if (Number.isInteger(number) === false ) {
