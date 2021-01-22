@@ -14,11 +14,11 @@ Expect(beepBoop(2).toEqual("Boop!"));
 Test: "It should return 'Won't you be my neighbor?' for the number 3"
 Expect(beepBoop(3).toEqual("Won't you be my neighbor?"));
 
-Test: "It should return 'Beep!' for any number that contains 1 first, left to right"
-Expect(beepBoop(132).toEqual("Beep!"));
+Test: "It should return 'Beep!' for any number that contains 1"
+Expect(beepBoop(17).toEqual("Beep!"));
 
-Test: "It should return 'Boop!' for any number that contains 2 first, left to right"
-Expect(beepBoop(213).toEqual("Boop!"));
+Test: "It should return 'Boop!' for any number that contains 2, overriding 1"
+Expect(beepBoop(102).toEqual("Boop!"));
 
-Test: "It should return 'Won't you be my neighbor?' for any  number that contains 3 first, left to right"
-Expect(beepBoop(321).toEqual("Won't you be my neighbor?"));
+Test: "It should return 'Won't you be my neighbor?' for any  number that contains 3, overriding 1 and 2"
+Expect(beepBoop(123).toEqual("Won't you be my neighbor?"))
