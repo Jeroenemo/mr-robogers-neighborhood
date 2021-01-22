@@ -28,8 +28,13 @@ function beepBoop(number) {
   if (Number.isInteger(number) === false ) {
     return "Please enter a whole number"
   } else {
-    roboArray.push(number);
+    if (number === 1) {
+      roboArray.push("Beep!");
+    } else {
+      roboArray.push(number);
+    }
   }
+  
   return roboArray
 }
-console.log(beepBoop(0))
+console.log(beepBoop(1))
