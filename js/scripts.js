@@ -8,8 +8,7 @@ function beepBoop(number, name) {
         if (name === "") {
           roboArray.push(" Won't you be my neighbor?");
         } else {
-          name = name.charAt(0).toUpperCase() + name.slice(1, name.length)
-          roboArray.push(" " + name + ", won't you be my neighbor? ");
+          roboArray.push(" " + titleCase(name) + ", won't you be my neighbor? ");
         }
       } else if (i.toString().includes(2)) {
         roboArray.push(" Boop!");
@@ -21,6 +20,14 @@ function beepBoop(number, name) {
     }
   }
   return roboArray
+}
+
+function titleCase(string) {
+  let name = string.split(" ");
+  for(let i = 0; i < name.length; i++) {
+    name[i] = name[i][0].toUpperCase() + name[i].slice(1);
+  }
+  return name.join(" ")
 }
 
 $(document).ready(function() {
