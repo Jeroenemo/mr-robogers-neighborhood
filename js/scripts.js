@@ -31,11 +31,18 @@ function titleCase(string) {
 }
 
 $(document).ready(function() {
-  $("form#input").submit(function(event) {
+  $("button#button").click(function() { 
+    $("#input").hide();
+    $("#out").show();
+  });
+
+  $("form#form").submit(function(event) {
     event.preventDefault();
     const number = parseInt($("#number").val());
     const name = ($("#name").val());
     $("#output").text(beepBoop(number, name))
   });
 }); 
+
+
 
