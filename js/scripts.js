@@ -28,10 +28,10 @@ function beepBoop(number) {
   if (Number.isInteger(number) === false ) {
     return "Please enter a whole number"
   } else {
-    if (number.toString().includes(1)) {
-      roboArray.push("Beep!");
-    } else if (number === 2) {
+    if (number.toString().includes(2)) {
       roboArray.push("Boop!");
+    } else if (number.toString().includes(1)) {
+      roboArray.push("Beep!");
     } else if (number === 3) {
       roboArray.push("Won't you be my neighbor?");
     } else {
@@ -41,4 +41,4 @@ function beepBoop(number) {
   
   return roboArray
 }
-console.log(beepBoop(21))
+console.log(beepBoop(1001002))
