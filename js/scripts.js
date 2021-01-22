@@ -21,7 +21,6 @@ function beepBoop(number, name) {
   }
   return roboArray
 }
-
 function titleCase(string) {
   let splitString = string.split(" ");
   for(let i = 0; i < splitString.length; i++) {
@@ -31,19 +30,21 @@ function titleCase(string) {
 }
 
 $(document).ready(function() {
-  $("button#input-button").click(function() { 
-    $("#input-form").hide();
-    $("#output-form").show();
-  });
-  $("button#output-button").click(function() {
-    $("#input-form").show();
-    $("#output-form").hide();
-  })
   $("form#form").submit(function(event) {
     event.preventDefault();
     const number = parseInt($("#number").val());
     const name = ($("#name").val());
-    $("#output").text(beepBoop(number, name))
+    $("button#input-button").click(function() { 
+      $("#input-form").hide();
+      $("#output-form").show();
+      $("#output").text(beepBoop(number, name));
+    });
+    $("button#output-button").click(function() {
+      $("#input-form").show();
+      $("#output-form").hide();
+    })
+    
+    
   });
 }); 
 
