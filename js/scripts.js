@@ -34,15 +34,20 @@ $(document).ready(function() {
     event.preventDefault();
     const number = parseInt($("#number").val());
     const name = ($("#name").val());
-    $("#output").text(beepBoop(number, name))
+    $("#output").text(beepBoop(number, name));
+    $("#reverse").text(beepBoop(number, name).reverse());
   });
-  $("button#input-button").click(function() { 
-    $("#input-form").hide();
-    $("#output-form").show();
-  });
-  $("button#output-button").click(function() {
-    $("#input-form").hide();
-    $("#output-form").show();
+  $(":button").click(function() { 
+    if (this.id === "input-button") {
+      $("#input-form").hide();
+      $("#output-form").show();
+    } else if (this.id ===  "output-button") {
+      $("#input-form").hide();
+      $("#output-form").show();
+    } else if (this.id === "reverse-button") {
+      $("#input-form").hide();
+      $("#reverse-form").show();
+    }
   });
 }); 
 
