@@ -23,3 +23,11 @@
 // Test: "It should return 'Won't you be my neighbor?' for any  number that contains 3, overriding 1 and 2"
 // Expect(beepBoop(123).toEqual("Won't you be my neighbor?"))
 
+function beepBoop(number) {
+  if (Number.isInteger(number) === false ) {
+    return "Please enter a whole number"
+  } else {
+    return "This is a whole"
+  }
+}
+console.log(beepBoop(3))
