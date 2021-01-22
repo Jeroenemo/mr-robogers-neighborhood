@@ -5,12 +5,15 @@ body {
   background-size: cover;
 }
 
-.jumbotron {
+#input.jumbotron {
   margin-right: 50%;
   margin-left: 5%;
   margin-top: 5%;
 }
 
-#out {
+#output.jumbotron {
   display: none;
+  margin-right: 50%;
+  margin-left: 5%;
+  margin-top: 5%;
 }

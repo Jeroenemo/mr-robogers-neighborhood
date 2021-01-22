@@ -33,7 +33,7 @@ function titleCase(string) {
 $(document).ready(function() {
   $("button#button").click(function() { 
     $("#input").hide();
-    $("#out").show();
+    $("#output").show();
   });
 
   $("form#form").submit(function(event) {
