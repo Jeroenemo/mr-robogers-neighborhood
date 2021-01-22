@@ -30,6 +30,9 @@ function beepBoop(number) {
   } else {
     if (number === 1) {
       roboArray.push("Beep!");
+    } else if (number === 2) {
+      roboArray.push("Boop!");
+    
     } else {
       roboArray.push(number);
     }
@@ -37,4 +40,4 @@ function beepBoop(number) {
   
   return roboArray
 }
-console.log(beepBoop(1))
+console.log(beepBoop(2))
