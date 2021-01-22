@@ -30,17 +30,18 @@ function beepBoop(number) {
   if (Number.isInteger(number) === false ) {
     return "Please enter a whole number"
   } else {
-    if (number.toString().includes(3)) {
-      roboArray.push("Won't you be my neighbor?");
-    } else if (number.toString().includes(2)) {
-      roboArray.push("Boop!");
-    } else if (number.toString().includes(1)) {
-      roboArray.push("Beep!");
-    } else {
-      roboArray.push(number);
+    for(let i = 0; i <= number; i++) {
+      if (i.toString().includes(3)) {
+        roboArray.push("Won't you be my neighbor?");
+      } else if (i.toString().includes(2)) {
+        roboArray.push("Boop!");
+      } else if (i.toString().includes(1)) {
+        roboArray.push("Beep!");
+      } else {
+        roboArray.push(i);
+      }
     }
   }
-  
   return roboArray
 }
-console.log(beepBoop(101001))
+console.log(beepBoop(22))
