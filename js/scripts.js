@@ -24,10 +24,12 @@
 // Expect(beepBoop(123).toEqual("Won't you be my neighbor?"))
 
 function beepBoop(number) {
+  const roboArray = []
   if (Number.isInteger(number) === false ) {
     return "Please enter a whole number"
   } else {
-    return "This is a whole"
+    roboArray.push(number);
   }
+  return roboArray
 }
-console.log(beepBoop(3))
+console.log(beepBoop(0))
