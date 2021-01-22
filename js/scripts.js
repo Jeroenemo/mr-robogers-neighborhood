@@ -28,7 +28,7 @@ function beepBoop(number) {
   if (Number.isInteger(number) === false ) {
     return "Please enter a whole number"
   } else {
-    if (number === 1) {
+    if (number.toString().includes(1)) {
       roboArray.push("Beep!");
     } else if (number === 2) {
       roboArray.push("Boop!");
@@ -41,4 +41,4 @@ function beepBoop(number) {
   
   return roboArray
 }
-console.log(beepBoop(2))
+console.log(beepBoop(21))
