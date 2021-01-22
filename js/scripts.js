@@ -23,11 +23,11 @@ function beepBoop(number, name) {
 }
 
 function titleCase(string) {
-  let name = string.split(" ");
-  for(let i = 0; i < name.length; i++) {
-    name[i] = name[i][0].toUpperCase() + name[i].slice(1);
+  let splitString = string.split(" ");
+  for(let i = 0; i < splitString.length; i++) {
+    splitString[i] = splitString[i][0].toUpperCase() + splitString[i].slice(1);
   }
-  return name.join(" ")
+  return splitString.join(" ")
 }
 
 $(document).ready(function() {
