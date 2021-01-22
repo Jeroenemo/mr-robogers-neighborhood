@@ -1,11 +1,11 @@
-function beepBoop(number) {
+function beepBoop(number, name) {
   const roboArray = []
   if (Number.isInteger(number) === false ) {
     return "Please enter a whole number"
   } else {
     for(let i = 0; i <= number; i++) {
       if (i.toString().includes(3)) {
-        roboArray.push("Won't you be my neighbor?");
+        roboArray.push(name + ", won't you be my neighbor?");
       } else if (i.toString().includes(2)) {
         roboArray.push("Boop!");
       } else if (i.toString().includes(1)) {
@@ -15,6 +15,15 @@ function beepBoop(number) {
       }
     }
   }
-  return roboArray
+  return roboArray.toString()
 }
-console.log(beepBoop(5))
+
+$(document).ready(function() {
+  $("form#input").submit(function(event) {
+    event.preventDefault();
+    const number = parseInt($("#number").val());
+    const name = ($("#name").val());
+    $("#output").text(beepBoop(number, name))
+  });
+}); 
+
