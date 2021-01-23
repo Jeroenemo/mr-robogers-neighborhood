@@ -1,7 +1,7 @@
 function beepBoop(number, name) {
-  const roboArray = []
+  const roboArray = [];
   if (Number.isInteger(number) === false ) {
-    return "Please enter a whole number"
+    return "Please enter a whole number";
   } else {
     for(let i = 0; i <= number; i++) {
       if (i.toString().includes(3)) {
@@ -26,7 +26,7 @@ function titleCase(string) {
   for(let i = 0; i < splitString.length; i++) {
     splitString[i] = splitString[i][0].toUpperCase() + splitString[i].slice(1);
   }
-  return splitString.join(" ")
+  return splitString.join(" ");
 }
 
 $(document).ready(function() {
