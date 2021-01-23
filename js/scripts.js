@@ -6,16 +6,16 @@ function beepBoop(number, name) {
     for(let i = 0; i <= number; i++) {
       if (i.toString().includes(3)) {
         if (name === "") {
-          roboArray.push(" Won't you be my neighbor?");
+          roboArray.push("Won't you be my neighbor?");
         } else {
-          roboArray.push(" " + titleCase(name) + ", won't you be my neighbor? ");
+          roboArray.push(titleCase(name) + ", won't you be my neighbor?");
         }
       } else if (i.toString().includes(2)) {
-        roboArray.push(" Boop!");
+        roboArray.push("Boop!");
       } else if (i.toString().includes(1)) {
-        roboArray.push(" Beep!");
+        roboArray.push("Beep!");
       } else {
-        roboArray.push(" " + i);
+        roboArray.push(i);
       }
     }
     return roboArray;
@@ -34,9 +34,8 @@ $(document).ready(function() {
     event.preventDefault();
     const number = parseFloat($("#number").val());
     const name = ($("#name").val());
-    const result = beepBoop(number, name);
-    $("#regular-output").text(result + ".");
-    $("#reverse-output").text(result.reverse() + "." );
+    $("#regular-output").text(beepBoop(number, name).join(" "));
+    $("#reverse-output").text(beepBoop(number, name).reverse().join(" "));
   });
   $(":button").click(function() {
     
