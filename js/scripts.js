@@ -19,7 +19,7 @@ function beepBoop(number, name) {
       }
     }
   }
-  return roboArray
+  return roboArray;
 }
 function titleCase(string) {
   let splitString = string.split(" ");
@@ -42,8 +42,9 @@ $(document).ready(function() {
       $("#input-form").hide();
       $("#output-form").show();
     } else if (this.id ===  "output-button") {
-      $("#input-form").hide();
-      $("#output-form").show();
+      $("#input-form").show();
+      $("#output-form").hide();
+      $("#reverse-form").hide();
     } else if (this.id === "reverse-button") {
       $("#input-form").hide();
       $("#reverse-form").show();
