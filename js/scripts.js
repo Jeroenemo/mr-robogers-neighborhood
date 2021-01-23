@@ -18,7 +18,7 @@ function beepBoop(number, name) {
         roboArray.push(i);
       }
     }
-    return roboArray;
+    return roboArray.join(" ");
   }
 }
 function titleCase(string) {
@@ -28,14 +28,24 @@ function titleCase(string) {
   }
   return splitString.join(" ");
 }
+function reverseArray(array) {
+  const splitArray = array.split(" ")
+  const reversedArray = [];
+  for (let i = splitArray.length - 1; i >= 0; i--) {
+    reversedArray.push(splitArray[i]);
+  }
+  return reversedArray.join(" ");
+}
 
 $(document).ready(function() {
   $("form#input").submit(function(event) {
     event.preventDefault();
     const number = parseFloat($("#number").val());
     const name = ($("#name").val());
-    $("#regular-output").text(beepBoop(number, name).join(" "));
-    $("#reverse-output").text(beepBoop(number, name).reverse().join(" "));
+    const result = beepBoop(number, name);
+    const reverseResult = reverseArray(result);
+    $("#regular-output").text(result)
+    $("#reverse-output").text(reverseResult);
   });
   $(":button").click(function() {
     
