@@ -1,6 +1,7 @@
 function beepBoop(number, name) {
   const roboArray = [];
-  if (Number.isInteger(number) === false ) {
+  if (Number.isInteger(number) === false || number % 1 !== 0) {
+    console.log(number)
     return "Please enter a whole number";
   } else {
     for(let i = 0; i <= number; i++) {
@@ -18,8 +19,8 @@ function beepBoop(number, name) {
         roboArray.push(" " + i);
       }
     }
+    return roboArray;
   }
-  return roboArray;
 }
 function titleCase(string) {
   let splitString = string.split(" ");
@@ -32,9 +33,10 @@ function titleCase(string) {
 $(document).ready(function() {
   $("form#input").submit(function(event) {
     event.preventDefault();
-    const number = parseInt($("#number").val());
+    const number = parseFloat($("#number").val());
+    console.log(number)
     const name = ($("#name").val());
-    result = beepBoop(number, name);
+    const result = beepBoop(number, name);
     $("#regular-output").text(result + ".");
     $("#reverse-output").text(result.reverse() + ".");
   });

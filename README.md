@@ -25,6 +25,7 @@ This is a simple webpage designed to demonstrate the abilty to loop with JavaScr
 ## Known Bugs
 * The reverse button does not prompt user to enter number if the form fields are left blank. 
 * The reverse button will use previous entries if the fields are left blank.
+*
 
 ## Future Enhancements
 * Fix aforementioned bugs concerning reverse button.
