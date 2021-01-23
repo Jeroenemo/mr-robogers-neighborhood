@@ -14,7 +14,7 @@
 
 ## Description
 
-This is a simple webpage designed to demonstrate the abilty to loop with JavaScript. This page was created with the guidance of **EPICODUS**, the greatest coding bootcamp in the known universe, and google. You can visit the page [here.](https://jeroenemo.github.io/mr-robogers-neighborhood/)
+This is a simple webpage designed to demonstrate the abilty to loop with JavaScript. The user is prompted to input a name and number, and the program will iterate over a range from 0 to the inputted number. Furthermore the program will ammend all occurances of the numbers 1, 2 and 3. This page was created with the guidance of **EPICODUS**, the greatest coding bootcamp in the known universe, and google. You can visit the page [here.](https://jeroenemo.github.io/mr-robogers-neighborhood/)
 
 ## Setup/Installation Requirements
 
