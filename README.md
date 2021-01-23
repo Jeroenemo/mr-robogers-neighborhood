@@ -23,9 +23,11 @@ This is a simple webpage designed to demonstrate the abilty to loop with JavaScr
 * Open _index.html_ in your browser
 
 ## Known Bugs
-* The reverse button does not prompt user to enter number if the form fields are left blank. 
-* The reverse button will use previous entries if the fields are left blank.
-*
+* The reverse button does not prompt user to enter number if the form fields are left blank. _(fixed)_
+* The reverse button will use previous entries if the fields are left blank. _(fixed)_
+* Would be nice to not reverse "Enter a whole number" and "won't you be my neighbor"
+* Does not render well on smaller viewports
+
 
 ## Future Enhancements
 * Fix aforementioned bugs concerning reverse button.
