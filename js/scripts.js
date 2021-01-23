@@ -30,25 +30,25 @@ function titleCase(string) {
 }
 
 $(document).ready(function() {
-  $("form#form").submit(function(event) {
+  $("form#input").submit(function(event) {
     event.preventDefault();
     const number = parseInt($("#number").val());
     const name = ($("#name").val());
     result = beepBoop(number, name);
-    $("#output").text(result + ".");
-    $("#reverse").text(result.reverse() + ".");
+    $("#regular-output").text(result + ".");
+    $("#reverse-output").text(result.reverse() + ".");
   });
   $(":button").click(function() { 
     if (this.id === "input-button") {
-      $("#input-div").hide();
-      $("#output-div").show();
+      $("#input").hide();
+      $("#output").show();
     } else if (this.id ===  "output-button") {
-      $("#input-div").show();
-      $("#output-div").hide();
-      $("#reverse-div").hide();
+      $("#input").show();
+      $("#output").hide();
+      $("#reverse").hide();
     } else if (this.id === "reverse-button") {
-      $("#input-div").hide();
-      $("#reverse-div").show();
+      $("#input").hide();
+      $("#reverse").show();
     }
   });
 }); 

@@ -5,16 +5,16 @@ body {
   background-size: cover;
 }
 
-#input-div.jumbotron, 
-#output-div.jumbotron, 
-#reverse-div.jumbotron {
+#input.jumbotron, 
+#output.jumbotron, 
+#reverse.jumbotron {
   margin-right: 50%;
   margin-left: 5%;
   margin-top: 5%;
 }
 
-#output-div.jumbotron, 
-#reverse-div.jumbotron {
+#output.jumbotron, 
+#reverse.jumbotron {
   display: none;
 }
 
