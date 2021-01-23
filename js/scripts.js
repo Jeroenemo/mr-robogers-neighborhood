@@ -1,7 +1,6 @@
 function beepBoop(number, name) {
   const roboArray = [];
   if (Number.isInteger(number) === false || number % 1 !== 0) {
-    console.log(number)
     return "Please enter a whole number";
   } else {
     for(let i = 0; i <= number; i++) {
@@ -34,7 +33,6 @@ $(document).ready(function() {
   $("form#input").submit(function(event) {
     event.preventDefault();
     const number = parseFloat($("#number").val());
-    console.log(number)
     const name = ($("#name").val());
     const result = beepBoop(number, name);
     $("#regular-output").text(result + ".");
