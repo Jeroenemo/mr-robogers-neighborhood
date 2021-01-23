@@ -36,19 +36,24 @@ $(document).ready(function() {
     const name = ($("#name").val());
     const result = beepBoop(number, name);
     $("#regular-output").text(result + ".");
-    $("#reverse-output").text(result.reverse() + ".");
+    $("#reverse-output").text(result.reverse() + "." );
   });
-  $(":button").click(function() { 
+  $(":button").click(function() {
+    
     if (this.id === "input-button") {
       $("#input").hide();
       $("#output").show();
-    } else if (this.id ===  "output-button") {
+    } else if (this.id === "output-button") {
+      $('input[type="text"]').val('');
       $("#input").show();
       $("#output").hide();
       $("#reverse").hide();
     } else if (this.id === "reverse-button") {
       $("#input").hide();
       $("#reverse").show();
+    } else {
+      $("#title").hide()
+      $("#input").show()
     }
   });
 }); 

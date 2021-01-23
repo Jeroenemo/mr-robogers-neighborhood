@@ -4,21 +4,23 @@ body {
   background-position: center;
   background-size: cover;
 }
-
-#input.jumbotron, 
-#output.jumbotron, 
-#reverse.jumbotron {
+.jumbotron {
   margin-right: 50%;
   margin-left: 5%;
   margin-top: 5%;
 }
-
+#input.jumbotron,
 #output.jumbotron, 
 #reverse.jumbotron {
   display: none;
 }
-
+.jumbotron h1, h3 {
+  font-family: 'Shadows Into Light', cursive;
+  text-align: center;
+}
 .button {
+  margin: 0 auto;
+  margin-top: 15px;
   margin-right: 10px;
   padding: 10px 30px;
   border: 1px solid black;
@@ -26,11 +28,9 @@ body {
   cursor: pointer;
   transition: background-color 0.1s ease-in-out;
 }
-
 .button:hover {
   background-color: rgb(100, 190, 220);
 }
-
 #regular-output,
 #reverse-output {
   font-family: 'Shadows Into Light', cursive;
