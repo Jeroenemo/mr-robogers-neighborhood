@@ -5,19 +5,18 @@ body {
   background-size: cover;
 }
 
-#input-form.jumbotron {
+#input-div.jumbotron, 
+#output-div.jumbotron, 
+#reverse-div.jumbotron {
   margin-right: 50%;
   margin-left: 5%;
   margin-top: 5%;
 }
 
-#output-form.jumbotron, #reverse-form.jumbotron {
+#output-div.jumbotron, 
+#reverse-div.jumbotron {
   display: none;
-  margin-right: 50%;
-  margin-left: 5%;
-  margin-top: 5%;
 }
-
 
 .button {
   margin-right: 10px;

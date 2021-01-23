@@ -15,7 +15,7 @@ function beepBoop(number, name) {
       } else if (i.toString().includes(1)) {
         roboArray.push(" Beep!");
       } else {
-        roboArray.push(i);
+        roboArray.push(" " + i);
       }
     }
   }
@@ -34,20 +34,21 @@ $(document).ready(function() {
     event.preventDefault();
     const number = parseInt($("#number").val());
     const name = ($("#name").val());
-    $("#output").text(beepBoop(number, name));
-    $("#reverse").text(beepBoop(number, name).reverse());
+    result = beepBoop(number, name);
+    $("#output").text(result + ".");
+    $("#reverse").text(result.reverse() + ".");
   });
   $(":button").click(function() { 
     if (this.id === "input-button") {
-      $("#input-form").hide();
-      $("#output-form").show();
+      $("#input-div").hide();
+      $("#output-div").show();
     } else if (this.id ===  "output-button") {
-      $("#input-form").show();
-      $("#output-form").hide();
-      $("#reverse-form").hide();
+      $("#input-div").show();
+      $("#output-div").hide();
+      $("#reverse-div").hide();
     } else if (this.id === "reverse-button") {
-      $("#input-form").hide();
-      $("#reverse-form").show();
+      $("#input-div").hide();
+      $("#reverse-div").show();
     }
   });
 }); 
