@@ -30,3 +30,10 @@ body {
 .button:hover {
   background-color: rgb(100, 190, 220);
 }
+
+#regular-output,
+#reverse-output {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 30px;
+  font-weight: bolder;
+}
