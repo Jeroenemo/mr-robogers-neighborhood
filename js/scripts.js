@@ -1,6 +1,6 @@
 function beepBoop(number, name) {
   const roboArray = [];
-  if (Number.isInteger(number) === false || number % 1 !== 0) {
+  if (Number.isInteger(number) === false || number % 1 !== 0 || number < 0) {
     return "Please enter a whole number";
   } else {
     for(let i = 0; i <= number; i++) {

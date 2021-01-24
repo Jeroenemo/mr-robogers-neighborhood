@@ -53,6 +53,9 @@ Expect(beepBoop("a").toEqual(Please enter a whole number));
 Test: "It should return "Please enter a whole number" if input is a float."
 Expect(beepBoop(1.5).toEqual(Please enter a whole number));
 
+Test: "It should return "Please enter a whole number" if input is a negative number."
+Expect(beepBoop(-5).toEqual(Please enter a whole number));
+
 Test: "It should return an array with a 0 if the number 0 is inputted."
 Expect(beepBoop(0).toEqual([0]));
 
