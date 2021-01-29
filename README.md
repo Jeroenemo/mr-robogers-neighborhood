@@ -60,23 +60,20 @@ Test: "It should return an array with a 0 if the number 0 is inputted."
 Expect(beepBoop(0).toEqual([0]));
 
 Test: "It should return 'Beep!' for the number 1."
-Expect(beepBoop(1).toEqual("Beep!"));
+Expect(beepBoop(1).toEqual([0, "Beep!"]));
 
 Test: "It should return 'Boop!' for the number 2."
-Expect(beepBoop(2).toEqual("Boop!"));
+Expect(beepBoop(2).toEqual([0, "Beep!", "Boop!"]));
 
 Test: "It should return 'Won't you be my neighbor?' for the number 3."
-Expect(beepBoop(3).toEqual("Won't you be my neighbor?"));
+Expect(beepBoop(3).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?"]));
 
 Test: "It should return 'Beep!' for any number that contains 1."
-Expect(beepBoop(17).toEqual("Beep!"));
+Expect(beepBoop(11).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!"]));
 
 Test: "It should return 'Boop!' for any number that contains 2, overriding 1."
-Expect(beepBoop(102).toEqual("Boop!"));
+Expect(beepBoop(12).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!"])
 
 Test: "It should return 'Won't you be my neighbor?' for any  number that contains 3, overriding 1 and 2."
-Expect(beepBoop(123).toEqual("Won't you be my neighbor?"))
-
-Test: "It should iterate over range of 0 to input and push results to array."
-Expect(beepBoop(5).toEqual([0,"Beep!", "Boop!", "Won't you be my neighbor?", 4, 5]))
+Expect(beepBoop(123).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Boop!", "Boop!", "Boop!", "Won't you be my neighbor?", "Boop!", "Boop!", "Boop!", "Boop!", "Boop!", "Boop!", "Won't you be my neighbor?", "Won't you be my neighbor?", "Won't you be my neighbor?", "Won't you be my neighbor?", "Won't you be my neighbor?", "Won't you be my neighbor?", "Won't you be my neighbor?", "Won't you be my neighbor?", "Won't you be my neighbor?", "Won't you be my neighbor?", 40, "Beep!", "Boop!", "Won't you be my neighbor?", 44, 45, 46, 47, 48, 49, 50, "Beep!", "Boop!", "Won't you be my neighbor?", 54, 55, 56, 57, 58, 59, 60, "Beep!", "Boop!", "Won't you be my neighbor?", 64, 65, 66, 67, 68, 69, 70, "Beep!", "Boop!", "Won't you be my neighbor?", 74, 75, 76, 77, 78, 79, 80, "Beep!", "Boop!", "Won't you be my neighbor?", 84, 85, 86, 87, 88, 89, 90, "Beep!", "Boop!", "Won't you be my neighbor?", 94, 95, 96, 97, 98, 99, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Boop!", "Boop!", "Boop!", "Won't you be my neighbor?"]))
 ```
